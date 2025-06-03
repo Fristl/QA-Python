@@ -3,12 +3,12 @@ from __future__ import annotations
 
 
 def calculate_average(nums: list[int | float]) -> float:
-    """Calculate the average between numbers."""
+    """Calculate the average between list of numbers."""
     total = sum(nums)
     count = len(nums)
     return total / count
 
 
-nums: list[int | float] = [10, 15, 20]
-result = calculate_average(nums)
+numbers: list[int | float] = [10, 15, 20]
+result = calculate_average(numbers)
 print("The average is:", result)  # noqa: T201
