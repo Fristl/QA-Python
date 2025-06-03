@@ -1,0 +1,30 @@
+[project]
+name = "qa-python"
+version = "0.1.0"
+description = "QA-python first course"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "isort>=6.0.1",
+    "mypy>=1.16.0",
+    "pre-commit>=4.2.0",
+    "ruff>=0.11.12",
+    "ruff-lsp>=0.0.62",
+]
+
+# Linters
+[tool.ruff]
+extend = "ruff.toml"
+
+unfixable = []
+
+
+[tool.mypy]
+python_version = "3.9"
+
+follow_imports = "silent"
+disable_error_code = "import-untyped"
+ignore_missing_imports = true
