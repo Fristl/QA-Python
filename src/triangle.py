@@ -41,6 +41,3 @@ class Triangle(Figure):
     def _perimeter(self) -> Number:
         """Calculate the perimeter of the figure."""
         return self._side_a + self._side_b + self._side_c
-
-
-
