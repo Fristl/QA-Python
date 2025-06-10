@@ -19,6 +19,3 @@ class Rectangle(Figure):
     def _perimeter(self) -> Number:
         """Calculate the perimeter of the figure."""
         return (self._width + self._height) * 2
-
-
-
