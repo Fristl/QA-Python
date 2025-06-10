@@ -21,6 +21,3 @@ class Circle(Figure):
     def _perimeter(self) -> Number:
         """Calculate the perimeter of the figure."""
         return pi * self._diameter
-
-
-
