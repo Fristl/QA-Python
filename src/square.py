@@ -9,4 +9,3 @@ class Square(Rectangle):
 
     def __init__(self, side: Number):
         super().__init__(side, side)
-
