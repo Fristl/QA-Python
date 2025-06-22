@@ -16,11 +16,11 @@ class Triangle(Figure):
         self._side_b = super().check_size(side_b)
         self._side_c = super().check_size(side_c)
 
-        if not self.triangle_exist():
+        if not self.__triangle_exist():
             raise TriangleError(self._side_a, self._side_b, self._side_c)
 
 
-    def triangle_exist(self) -> bool:
+    def __triangle_exist(self) -> bool:
         """Check if triangle exists."""
         return (
             self._side_a + self._side_b > self._side_c and
