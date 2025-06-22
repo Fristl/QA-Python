@@ -5,9 +5,10 @@ repos:
     -   id: conventional-pre-commit
         name: Conventional commit check
         stages: [commit-msg]
+        args: [--verbose]
 
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.11.12
+    rev: v0.11.13
     hooks:
     -   id: ruff
         name: Ruff linter
